@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+
+  <header class="bg-indigo-600 dark:bg-indigo-800 text-white py-6 shadow-md">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Mohit Chogale</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-indigo-300">About</a>
+        <a href="#achievements" class="hover:text-indigo-300">Achievements</a>
+        <a href="#goals" class="hover:text-indigo-300">Dreams</a>
+        <a href="#contact" class="hover:text-indigo-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10">
+
+    <section id="about" class="text-center mb-16">
+      <img src="Images/mohitimg.jpeg" alt="My Photo" class="mx-auto rounded-full w-36 h-36 mb-6 shadow-lg"/>
+      <video src=""></video>
+      <h2 class="text-4xl font-semibold mb-4">Hello, I'm Mohit Chogale</h2>
+      <h2 class="fade-in">Watch Intro Video</h2>
+      <video class=" intro-video fade-in" autoplay loop muted playsinline>
+        <source src="intro-video.mp4" type="video/mp4" />
+      </video>
+      <p class="text-lg max-w-2xl mx-auto">
+        I'm an aspiring engineer with a passion for learning and creating impactful digital experiences.
+        I thrive on curiosity, innovation, and collaboration.
+      </p>
+    </section>
+
+    <section id="achievements" class="mb-16">
+      <h2 class="text-3xl font-semibold text-center mb-8">Achievements</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="https://via.placeholder.com/80" alt="Certifications" class="mx-auto mb-4"/>
+          <h3 class="text-xl font-bold mb-2">Certifications</h3>
+          <p>
+            Certification in Cyber Security. <br />
+            I am working on frontend developing<br />
+            Certification in UNIX.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="https://via.placeholder.com/80" alt="Events" class="mx-auto mb-4"/>
+          <h3 class="text-xl font-bold mb-2">Events</h3>
+          <p>
+            Participated in VCET Hackathon.<br />
+            Participated in SJCEM Code Relay.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="https://via.placeholder.com/80" alt="Projects" class="mx-auto mb-4"/>
+          <h3 class="text-xl font-bold mb-2">Projects</h3>
+          <p>Mini project on Smart Robo Cart.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals" class="mb-16">
+      <h2 class="text-3xl font-semibold text-center mb-8">My Dreams</h2>
+      <p class="text-lg max-w-3xl mx-auto text-center">
+        My dream is to become a tech innovator and create solutions that empower people and businesses.
+        I aspire to work with cutting-edge technologies and contribute to impactful projects globally.
+      </p>
+    </section>
+
+    <section id="contact" class="mb-16">
+      <h2 class="text-3xl font-semibold text-center mb-8">Connect with Me</h2>
+      <div class="flex flex-col items-center space-y-4">
+        <a href="mailto:mohitchogale21@gmail.com" class="text-indigo-600 hover:underline">mohitchogale21@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mohit-chogale-774730/" class="text-indigo-600 hover:underline" target="_blank">LinkedIn</a>
+        <a href="https://github.com/mohitchogale06" class="text-indigo-600 hover:underline" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center py-4">
+    <p>&copy; 2025 Mohit Chogale. All rights reserved.</p>
+  </footer>
+</body>
+</html>
