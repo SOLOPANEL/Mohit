@@ -1,97 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Chogale | My Digital Identity</title>
+  <link rel="icon" href="favicon.ico" />
+  
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="stylesheet" href="styles.css">
+  <!-- DaisyUI CDN (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
 
-  <header class="bg-indigo-600 dark:bg-indigo-800 text-white py-6 shadow-md">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold">Mohit Chogale</h1>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#about" class="hover:text-indigo-300">About</a>
-        <a href="#achievements" class="hover:text-indigo-300">Achievements</a>
-        <a href="#goals" class="hover:text-indigo-300">Dreams</a>
-        <a href="#contact" class="hover:text-indigo-300">Contact</a>
-      </nav>
-    </div>
+<body class="bg-blue-50 text-blue-900 font-sans">
+  <header class="bg-blue-700 shadow-md p-4 text-white flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Identity</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#welcome" class="hover:underline">Welcome</a></li>
+      <li><a href="#about" class="hover:underline">About Me</a></li>
+      <li><a href="#achievements" class="hover:underline">Achievements</a></li>
+      <li><a href="#goals" class="hover:underline">Goals</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
   </header>
 
-  <main class="container mx-auto px-4 py-10">
+  <!-- Welcome -->
+  <section id="welcome" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg text-center" data-aos="fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Welcome to My World!</h2>
+    <img src="Images/mohitimg.jpeg" alt="My Photo" class="w-40 h-40 mx-auto rounded-full shadow-md border-4 border-white" />
+    <h3 class="text-xl font-semibold mt-6 mb-2">Watch My Intro Video</h3>
+    <video class="mx-auto rounded-lg shadow-lg" width="100%" controls autoplay loop muted>
+      <source src="intro-video.mp4" type="video/mp4">
+    </video>
+  </section>
 
-    <section id="about" class="text-center mb-16">
-      <img src="Images/mohitimg.jpeg" alt="My Photo" class="mx-auto rounded-full w-36 h-36 mb-6 shadow-lg"/>
-      <video src=""></video>
-      <h2 class="text-4xl font-semibold mb-4">Hello, I'm Mohit Chogale</h2>
-      <h2 class="fade-in">Watch Intro Video</h2>
-      <video class=" intro-video fade-in" autoplay loop muted playsinline>
-        <source src="intro-video.mp4" type="video/mp4" />
-      </video>
-      <p class="text-lg max-w-2xl mx-auto">
-        I'm an aspiring engineer with a passion for learning and creating impactful digital experiences.
-        I thrive on curiosity, innovation, and collaboration.
-      </p>
-    </section>
+  <!-- About Me -->
+  <section id="about" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-4">About Me</h2>
+    <p><strong>Name:</strong> Mohit Chogale</p>
+    <p><strong>Location:</strong> Malad, Mumbai</p>
+    <p><strong>Education:</strong> Bhavans, Aldel St. John College (B.Tech)</p>
+    <p><strong>Languages:</strong> English, Marathi, Hindi</p>
+  </section>
 
-    <section id="achievements" class="mb-16">
-      <h2 class="text-3xl font-semibold text-center mb-8">Achievements</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Achievements -->
+  <section id="achievements" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-4">Achievements</h2>
+    <p> I'm an aspiring engineer with a passion for learning and creating impactful digital experiences.</p>
+    <p> I thrive on curiosity, innovation, and collaboration.</p>
+    <ul id="achievementList" class="list-disc pl-5 space-y-2 text-blue-800"></ul>
+  </section>
 
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <img src="https://via.placeholder.com/80" alt="Certifications" class="mx-auto mb-4"/>
-          <h3 class="text-xl font-bold mb-2">Certifications</h3>
-          <p>
-            Certification in Cyber Security. <br />
-            I am working on frontend developing<br />
-            Certification in UNIX.
-          </p>
-        </div>
+  <!-- Future Goals -->
+  <section id="goals" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-4">Future Goals</h2>
+    <p>Working on Frontend and backend programming & learning cryptograph.</p>
+  </section>
 
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <img src="https://via.placeholder.com/80" alt="Events" class="mx-auto mb-4"/>
-          <h3 class="text-xl font-bold mb-2">Events</h3>
-          <p>
-            Participated in VCET Hackathon.<br />
-            Participated in SJCEM Code Relay.
-          </p>
-        </div>
+  <!-- Quote of the Day -->
+  <section class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md text-center" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">Be Better Everyday</h2>
+    <p id="quote" class="italic text-gray-600"></p>
+  </section>
 
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <img src="https://via.placeholder.com/80" alt="Projects" class="mx-auto mb-4"/>
-          <h3 class="text-xl font-bold mb-2">Projects</h3>
-          <p>Mini project on Smart Robo Cart.</p>
-        </div>
-      </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-4">Contact Me</h2>
+    <p>📞 <a href="tel:916565642556" class="text-blue-600 underline">+91XXXXXXXXXX</a></p>
+    <p>💬 <a href="https://wa.me/919372816516" class="text-green-600 underline">Chat on WhatsApp</a></p>
+    <p>✉️ <a href="mailto:red8carbon@gmail.com" class="text-red-600 underline">Mail</a></p>
+    <p>📍 <iframe src="https://www.google.com/maps?q=Malad,Maharashtra&output=embed" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe></p>
+    <p class="mt-4">🌐 <a href="https://github.com/SOLOPANEL" class="underline">GitHub</a> |
+       <a href="https://linkedin.com/in/yourprofile    " class="underline">LinkedIn</a> |
+       <a href="https://instagram.com/yourprofile" class="underline">Instagram</a></p>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="mt-6 flex flex-col gap-4">
+      <input type="text" name="name" placeholder="Your Name" required class="border p-2 rounded-md" />
+      <input type="email" name="_replyto" placeholder="Your Email" required class="border p-2 rounded-md" />
+      <textarea name="message" placeholder="Your Message" required class="border p-2 rounded-md"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-800">Send</button>
+    </form>
+  </section>
 
-    <section id="goals" class="mb-16">
-      <h2 class="text-3xl font-semibold text-center mb-8">My Dreams</h2>
-      <p class="text-lg max-w-3xl mx-auto text-center">
-        My dream is to become a tech innovator and create solutions that empower people and businesses.
-        I aspire to work with cutting-edge technologies and contribute to impactful projects globally.
-      </p>
-    </section>
-
-    <section id="contact" class="mb-16">
-      <h2 class="text-3xl font-semibold text-center mb-8">Connect with Me</h2>
-      <div class="flex flex-col items-center space-y-4">
-        <a href="mailto:mohitchogale21@gmail.com" class="text-indigo-600 hover:underline">mohitchogale21@gmail.com</a>
-        <a href="https://www.linkedin.com/in/mohit-chogale-774730/" class="text-indigo-600 hover:underline" target="_blank">LinkedIn</a>
-        <a href="https://github.com/mohitchogale06" class="text-indigo-600 hover:underline" target="_blank">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-gray-200 dark:bg-gray-800 text-center py-4">
-    <p>&copy; 2025 Mohit Chogale. All rights reserved.</p>
+  <footer class="bg-blue-700 text-white text-center py-4 mt-12">
+    <p>© 2025 Mohit Chogale | Built with ❤️</p>
   </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
